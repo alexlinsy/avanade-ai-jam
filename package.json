@@ -10,6 +10,8 @@
     "@types/node": "^16.18.24",
     "@types/react": "^18.0.38",
     "@types/react-dom": "^18.0.11",
+    "concurrently": "^8.0.1",
+    "json-server": "^0.17.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
@@ -20,7 +22,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "server": "json-server --watch db.json --port 3031",
+    "dev": "concurrently --kill-others \"npm start\" \"npm run server\""
   },
   "eslintConfig": {
     "extends": [
