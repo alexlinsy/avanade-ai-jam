@@ -7,7 +7,7 @@ import { useGlobalContext } from "../../context";
 
 
 function SearchForm({}) {
-  const {setSearchTerm, setResultTitle } = useGlobalContext();
+  const {setSearchTerm, setResultTitle } = useGlobalContext<string>();
   const searchText = useRef("");
   const navigate = useNavigate();
 
