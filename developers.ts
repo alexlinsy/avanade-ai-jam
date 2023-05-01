@@ -13,7 +13,6 @@ export const developers_data = [
     region: "central Canada",
     country: "Canada",
     city: "Winnipeg",
-    embedding: 1234,
     experiences: [
       {
         company:
@@ -48,7 +47,6 @@ export const developers_data = [
     region: "central Canada",
     country: "Canada",
     city: "Vancouver",
-    embedding: 1234,
     experiences: [
       {
         company: "CIBC Online Banking",
@@ -85,7 +83,6 @@ export const developers_data = [
     region: "West US",
     country: "US",
     city: "Seattle",
-    embedding: 1234,
     experiences: [
       {
         company: "BOA Online Banking",
@@ -112,7 +109,6 @@ export const developers_data = [
     region: "East US",
     country: "US",
     city: "New York",
-    embedding: 5678,
     experiences: [
       {
         company: "XYZ Mobile",
