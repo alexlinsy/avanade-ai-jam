@@ -25,6 +25,7 @@ interface CandidateCardProps {
 
 const CandidateCard = ({ candidate }: CandidateCardProps) => {
   const {
+    id,
     avatar,
     name,
     title,
@@ -41,7 +42,7 @@ const CandidateCard = ({ candidate }: CandidateCardProps) => {
     window.location.href = `mailto:${work_email}`;
   };
   return (
-    <Card width="2xl" className="bg-gray-100">
+    <Card width="2xl" className="bg-gray-100 mt-5">
       <CardHeader>
         <Flex>
           <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
