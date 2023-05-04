@@ -1,5 +1,20 @@
 export type DeveloperType = (typeof developers_data)[0];
 
+export type CandidateType = {
+  id: string;
+  avatar: string;
+  name: string;
+  title: string;
+  level: string;
+  contact: string;
+  work_email: string;
+  region: string;
+  country: string;
+  city: string;
+  experiences: string;
+  certificates: string;
+};
+
 export const developers_data = [
   {
     id: 1,

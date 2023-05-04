@@ -34,7 +34,7 @@ export async function GET(request: Request) {
   const { data, error } = await supabaseClient.rpc("search_developers", {
     query_embedding: embedding,
     similarity_threshold: 0.5,
-    match_count: 5,
+    match_count: 10,
   });
 
   if (data) {
