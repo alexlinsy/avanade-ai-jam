@@ -33,8 +33,8 @@ export async function GET(request: Request) {
   // search for similar embeddings in supabase
   const { data, error } = await supabaseClient.rpc("search_developers", {
     query_embedding: embedding,
-    similarity_threshold: 0.5,
-    match_count: 10,
+    similarity_threshold: 0.75,
+    match_count: 5,
   });
 
   if (data) {
