@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import {
   Input,
   InputGroup,
@@ -14,6 +15,7 @@ import { searchHeaderText } from "@/utilities/constants";
 import useSWR from "swr";
 import { CandidateType } from "@/developers";
 import CandidateCard from "./CandidateCard";
+import logo from "../public/ai-jam-logo.png";
 
 const SearchSection = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -52,9 +54,12 @@ const SearchSection = () => {
 
   return (
     <div className="w-full flex flex-col items-center mt-[100px] h-full">
-      <h1 className="text-4xl font-bold text-center text-neutral-900">
-        {searchHeaderText}
-      </h1>
+      <div className="flex">
+        <h1 className="mr-4 text-4xl font-bold text-center text-neutral-900">
+          {searchHeaderText}
+        </h1>
+        <Image src={logo} alt="AI Jam" className="w-[60px] h-[60px]" />
+      </div>
       <InputGroup className="max-w-2xl mt-10" onKeyDown={handleSubmit}>
         <InputLeftElement
           pointerEvents="none"

@@ -102,12 +102,12 @@ export const developers_data = [
       {
         company: "BOA Online Banking",
         content:
-          "Java, Git. Leaded back end development team for Adobe data analytics project with 5 successful web releases, includes more than 20 Java applications. Mentor teammates to get familiar with the project and solve database problems.",
+          "10 years development experience in Java, Git. Leaded back end development team for Adobe data analytics project with 5 successful web releases, includes more than 20 Java applications. Mentor teammates to get familiar with the project and solve database problems.",
       },
       {
         company: "Large Financial Corporation",
         content:
-          "Expreince of developing and handling database for large airline company. Followed agile development and TDD to ensure the efficiency and quality of the application. Accomplished comprehensive data process with Java, SQL and Spring Boot.",
+          "10 years experience of developing and handling database for large airline company. Followed agile development and TDD to ensure the efficiency and quality of the application. Accomplished comprehensive data process with Java, SQL and Spring Boot.",
       },
     ],
     certificates: "AZ-900, AZ-204, DB-900",
